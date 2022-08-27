@@ -1,12 +1,13 @@
 const express=require("express");
 const path =require("path");
+const dotenv=require("dotenv");
 const expressLayouts=require("express-ejs-layouts");
 const bodyParser=require("body-parser");
 const session=require('express-session');
 const passport=require('passport');
 const flash=require('connect-flash');
 const mongoose=require('mongoose');
-
+dotenv.config();
 
 require('./config/passport')(passport)
 
